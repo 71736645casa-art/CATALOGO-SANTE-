@@ -1,54 +1,4 @@
-<?php
-$categories = [
-    [
-        'name' => 'Scrubs Mujer',
-        'desc' => 'Cortes comodos, frescos y funcionales para turnos largos.',
-        'image' => 'assets/img/placeholders/perfil.jpg'
-    ],
-    [
-        'name' => 'Scrubs Hombre',
-        'desc' => 'Diseno profesional con telas resistentes y ligeras.',
-        'image' => 'assets/img/placeholders/perfil2.jpg'
-    ],
-    [
-        'name' => 'Batas Clinicas',
-        'desc' => 'Acabado elegante para consulta, laboratorio y visitas.',
-        'image' => 'assets/img/placeholders/perfil3.jpg'
-    ],
-    [
-        'name' => 'Accesorios',
-        'desc' => 'Gorros, chaquetas y complementos para un look completo.',
-        'image' => 'assets/img/placeholders/perfil4.jpg'
-    ]
-];
 
-$featuredProducts = [
-    [
-        'name' => 'Set Vital Pro',
-        'type' => 'Uniforme Unisex'
-    ],
-    [
-        'name' => 'Set Aura Flex',
-        'type' => 'Uniforme Mujer'
-    ],
-    [
-        'name' => 'Bata Core White',
-        'type' => 'Bata Clinica'
-    ],
-    [
-        'name' => 'Set Motion Fit',
-        'type' => 'Uniforme Hombre'
-    ],
-    [
-        'name' => 'Chaqueta Guard Shift',
-        'type' => 'Abrigo Ligero'
-    ],
-    [
-        'name' => 'Gorro Clean Line',
-        'type' => 'Accesorio'
-    ]
-];
-?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -104,29 +54,55 @@ $featuredProducts = [
         <section class="hm-showcase" id="coleccion" aria-label="Novedades">
             <div class="hm-showcase-head">
                 <h2>Novedades</h2>
-               <a href="productos.php">Ver todo</a>
+               <a href="productos.html">Ver todo</a>
             </div>
 
-            <div class="grid-categories">
-                <?php foreach ($categories as $index => $category): ?>
-                    <a class="category-card" href="productos.php" style="--delay: <?php echo $index * 70; ?>ms;">
-                        <div class="category-photo">
-                            <img
-                                src="<?php echo htmlspecialchars($category['image'], ENT_QUOTES, 'UTF-8'); ?>"
-                                alt="<?php echo htmlspecialchars($category['name'], ENT_QUOTES, 'UTF-8'); ?>"
-                            >
-                        </div>
-                        <div class="category-content">
-                            <h3><?php echo htmlspecialchars($category['name'], ENT_QUOTES, 'UTF-8'); ?></h3>
-                            <span aria-hidden="true">&rarr;</span>
-                        </div>
-                    </a>
-                <?php endforeach; ?>
-            </div>
-        </section>
+          <div class="grid-categories">
+
+    <a class="category-card" href="productos.html">
+        <div class="category-photo">
+            <img src="assets/img/placeholders/perfil.jpg" alt="Scrubs Mujer">
+        </div>
+        <div class="category-content">
+            <h3>Scrubs Mujer</h3>
+            <span aria-hidden="true">&rarr;</span>
+        </div>
+    </a>
+
+    <a class="category-card" href="productos.html">
+        <div class="category-photo">
+            <img src="assets/img/placeholders/perfil2.jpg" alt="Scrubs Hombre">
+        </div>
+        <div class="category-content">
+            <h3>Scrubs Hombre</h3>
+            <span aria-hidden="true">&rarr;</span>
+        </div>
+    </a>
+
+    <a class="category-card" href="productos.html">
+        <div class="category-photo">
+            <img src="assets/img/placeholders/perfil3.jpg" alt="Batas Clinicas">
+        </div>
+        <div class="category-content">
+            <h3>Batas Clinicas</h3>
+            <span aria-hidden="true">&rarr;</span>
+        </div>
+    </a>
+
+    <a class="category-card" href="productos.html">
+        <div class="category-photo">
+            <img src="assets/img/placeholders/perfil4.jpg" alt="Accesorios">
+        </div>
+        <div class="category-content">
+            <h3>Accesorios</h3>
+            <span aria-hidden="true">&rarr;</span>
+        </div>
+    </a>
+
+</div>
 
         <section class="editorial-duo" aria-label="Colecciones destacadas">
-            <a class="editorial-card" href="productos.php">
+            <a class="editorial-card" href="productos.html">
                 <img src="assets/img/placeholders/verde.jpg.jpg" alt="Coleccion verde Sante">
                 <div class="editorial-copy">
                     <h2>Verdes esenciales</h2>
@@ -134,7 +110,7 @@ $featuredProducts = [
                 </div>
             </a>
 
-            <a class="editorial-card" href="productos.php">
+            <a class="editorial-card" href="productos.html">
                 <img src="assets/img/placeholders/beige.jpg" alt="Coleccion beige Sante">
                 <div class="editorial-copy">
                     <h2>Beige moderno</h2>
